@@ -21,8 +21,9 @@ class SerialGenerator:
     def __init__(self, start):
         """Create a new instance of SerialGenerator"""
 
-        self.start = start
-        self.next = start
+        self.start = self.next = start
+
+    # __repr__ method
 
     def generate(self):
         """Increment self.next by 1 and return self.next - 1"""
