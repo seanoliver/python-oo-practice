@@ -18,3 +18,20 @@ class SerialGenerator:
     100
     """
 
+    def __init__(self, start):
+        """Create a new instance of SerialGenerator"""
+
+        self.start = start
+        self.next = start
+
+    def generate(self):
+        """Increment self.next by 1 and return self.next - 1"""
+
+        self.next += 1
+        return self.next - 1
+
+    def reset(self):
+        """Reset self.next to the initial starting value"""
+
+        self.next = self.start
+
