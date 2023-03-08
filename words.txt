@@ -1,0 +1,6 @@
+cat
+dog
+porcupine
+walrus
+sloth
+panda
