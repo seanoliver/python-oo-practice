@@ -12,6 +12,9 @@ class SerialGenerator:
     >>> serial.generate()
     102
 
+    >>> serial 
+    <SerialGenerator start = 100 next = 103>
+
     >>> serial.reset()
 
     >>> serial.generate()
@@ -23,7 +26,9 @@ class SerialGenerator:
 
         self.start = self.next = start
 
-    # __repr__ method
+    def __repr__(self):
+
+        return f"<SerialGenerator start = {self.start} next = {self.next}>"
 
     def generate(self):
         """Increment self.next by 1 and return self.next - 1"""

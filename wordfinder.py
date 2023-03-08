@@ -28,6 +28,8 @@ class WordFinder:
     #         word_list = self.append_word(line, word_list)
     #     return word_list
 
+  
+
     def get_filtered_words(self, word_list):
 
         return [word.rstrip() for word in word_list]
